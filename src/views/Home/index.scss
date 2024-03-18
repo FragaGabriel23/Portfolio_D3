@@ -1,1 +1,58 @@
 @use '../../sass/variables' as *;
+
+.header {
+
+    &__logo {
+        height: 15vh;
+        padding: 4vh 5vw 0;
+
+        font-weight: 800;
+        font-size: 3vw;
+    }
+
+    &__main {
+        height: 85vh;
+        display: flex;
+        align-items: center;
+    }
+
+    &__navBar {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        row-gap: 5vh;
+        flex-direction: column;
+        height: 100%;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8vw;
+        }
+
+        a {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-orientation: mixed;
+            white-space: nowrap;
+
+            font-weight: 300;
+            font-size: 2.7vh;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            font-weight: 700;
+        }
+    }
+
+    &__text {
+        flex: 1;
+
+        text-align: center;
+        font-family: 'DotGothic16';
+        font-weight: 400;
+        font-size: 2vw;
+    }
+}
