@@ -11,7 +11,7 @@
     }
 
     &__main {
-        height: 85vh;
+        height: 70vh;
         display: flex;
         align-items: center;
     }
@@ -39,6 +39,8 @@
 
             font-weight: 300;
             font-size: 2.7vh;
+            
+            transition: 0.3s;
         }
 
         a:hover{
@@ -54,5 +56,55 @@
         font-family: 'DotGothic16';
         font-weight: 400;
         font-size: 2vw;
+    }
+}
+
+.projects__title {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 0 5vw;
+    height: 15vh;
+
+    h1 {
+        font-size: 2.5vw;
+        font-weight: 800;
+    }
+
+    hr {
+        border: none;
+        background-color: $black;
+        width: 5vw;
+        height: 1vh;
+    }
+}
+
+.projects__container {
+    padding: 2.5vh 5vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5vh;
+}
+
+.about__title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 5vw;
+    height: 15vh;
+
+    h1 {
+        font-size: 2.5vw;
+        font-weight: 800;
+    }
+
+    hr {
+        border: none;
+        background-color: $black;
+        width: 7vw;
+        height: 1vh;
     }
 }

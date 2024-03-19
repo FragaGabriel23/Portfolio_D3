@@ -1,0 +1,58 @@
+@use '../../sass/variables' as *;
+
+.cardProject {
+    display: flex;
+    column-gap: 2vw;
+    height: 30vh;
+
+
+    &__left {
+        background-color: $cardBackground;
+        position: relative;
+        padding: 5vh 2vw;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 15vw;
+        height: auto;
+    }
+
+    &__tags {
+        display: flex;
+        column-gap: 0.5vw;
+        justify-content: end;
+        position: absolute;
+        bottom: 1vh;
+        right: 0.5vw;
+    }
+
+    &__tags p {
+        background-color: $white;
+        padding: 0.5vh 0.7vw;
+        border-radius: 1vw;
+        box-shadow: 0.3vh 0.5vh 1vh -0.7vh rgba(0, 0, 0, 0.219);
+
+        font-size: 0.65vw;
+        font-weight: 800;
+    }
+
+    &__right {
+        width: 20vw;
+        padding: 1vh 0;
+
+        h2 {
+            font-size: 1.5vw;
+            font-weight: 800;
+            margin-bottom: 1vh;
+        }
+
+        p {
+            font-size: 0.9vw;
+            font-weight: 300;
+            color: #808080;
+        }
+    }
+
+}
