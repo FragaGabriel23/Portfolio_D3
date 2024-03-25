@@ -39,11 +39,11 @@
 
             font-weight: 300;
             font-size: 2.7vh;
-            
+
             transition: 0.3s;
         }
 
-        a:hover{
+        a:hover {
             text-decoration: underline;
             font-weight: 700;
         }
@@ -52,59 +52,224 @@
     &__text {
         flex: 1;
 
-        text-align: center;
-        font-family: 'DotGothic16';
-        font-weight: 400;
-        font-size: 2vw;
+        h1 {
+            text-align: center;
+            font-family: 'DotGothic16';
+            font-weight: 400;
+            font-size: 4vw;
+        }
     }
 }
 
-.projects__title {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    padding: 0 5vw;
-    height: 15vh;
+.projects {
 
-    h1 {
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        padding: 0 5vw;
+        height: 15vh;
+    }
+
+    &__title h1 {
         font-size: 2.5vw;
         font-weight: 800;
     }
 
-    hr {
+    &__title hr {
         border: none;
         background-color: $black;
         width: 5vw;
         height: 1vh;
     }
+
+    &__container {
+        padding: 2.5vh 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5vh;
+    }
+
 }
 
-.projects__container {
-    padding: 2.5vh 5vw;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5vh;
+.about {
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 0 5vw;
+        height: 15vh;
+    }
+
+    &__title h1 {
+        font-size: 2.5vw;
+        font-weight: 800;
+    }
+
+    &__title hr {
+        border: none;
+        background-color: $black;
+        width: 7vw;
+        height: 1vh;
+    }
+
+    &__presentation {
+        padding: 8vh 10vw;
+        display: flex;
+        align-items: center;
+    }
+
+    &__presentation img {
+        border-radius: 50%;
+        width: 15vw;
+        height: 15vw;
+        opacity: 0;
+    }
+
+    &__presentation aside {
+        padding: 0 3vw 0 5vw;
+    }
+
+    &__presentation h1 {
+        font-size: 2vw;
+        font-weight: 700;
+    }
+
+    &__presentation p {
+        margin: 3vh 0 3vh 0;
+
+        line-height: 4vh;
+        text-align: left;
+        font-size: 1.1vw;
+        font-weight: 300;
+    }
+
+    &__contact {
+        display: flex;
+        column-gap: 1vw;
+
+        font-size: 1.2vw;
+        font-weight: 500;
+
+    }
+
+    &__contact a {
+        transition: 0.3s;
+    }
+
+    &__contact a:hover {
+        text-decoration: underline;
+        font-weight: 800;
+    }
+
+    &__tools {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 3vw;
+        padding: 1.5vh 5vw;
+        height: 15vh;
+    }
+
+    &__cardTools {
+        display: flex;
+        align-items: center;
+        padding: 1vh 0vw;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 0.15vw 0px #00000040;
+    }
+
+    &__cardTools hr {
+        height: 8vh;
+        width: 0.1vw;
+        border: none;
+        background-color: #00000040;
+    }
+
+    &__iconContainer {
+        padding: 0 1vw;
+
+    }
+
+    &__iconContainer img {
+        width: 2vw;
+    }
+
+    &__textContainer {
+        padding: 0 0 0 1vw;
+
+    }
+
+    &__textContainer h2 {
+        font-size: 1.3vw;
+        font-weight: 800;
+    }
+
+    &__textContainer p {
+        font-size: 0.7vw;
+        font-weight: 300;
+
+    }
+
+    &__experience {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10vh 5vw;
+        column-gap: 5vw;
+    }
+
+    &__experienceCard {
+        display: flex;
+        column-gap: 1vw;
+        padding: 2vh 1vw;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 0.15vw 0px #00000040;
+
+
+    }
+
+    &__experienceCard hr {
+        height: 100%;
+        width: 0.1vw;
+        border: none;
+        background-color: #00000040;
+    }
+
+    &__experienceList b {
+        font-size: 1.2vw;
+        font-weight: 800;
+        line-height: 5vh;
+    }
+
+    &__experienceList li {
+        font-size: 0.9vw;
+        font-weight: 300;
+        line-height: 3vh;
+        list-style: none;
+    }
+
 }
 
-.about__title {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding: 0 5vw;
-    height: 15vh;
+.contact__title {
+    text-align: center;
 
     h1 {
         font-size: 2.5vw;
         font-weight: 800;
     }
+}
 
-    hr {
-        border: none;
-        background-color: $black;
-        width: 7vw;
-        height: 1vh;
+.contact__icons {
+    display: flex;
+    column-gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0 20vh;
+
+    img {
+        width: 3vw;
+        height: 3vw;
     }
 }
