@@ -49,7 +49,7 @@ const Home = () => {
                             Olá! Sou especializado em criar experiências digitais memoráveis, garantindo atenção aos detalhes desde os layouts até a otimização do desempenho. Com experiência em desenvolvimento, estou preparado para enfrentar desafios e contribuir para projetos inovadores. Vamos trabalhar juntos?
                         </p>
                         <div className='about__contact'>
-                            <a href="https://www.linkedin.com/in/gabriel-fraga-1a8099109/" target='_blank'>LINKEDIN</a>
+                            <a href="https://www.linkedin.com/in/gabriel-fraga-dev/" target='_blank'>LINKEDIN</a>
                             <a href="https://github.com/FragaGabriel23/" target='_blank'>GITHUB</a>
                             <a href="mailto:gabrielfraga2308@gmail.com" target='_blank'>EMAIL</a>
                         </div>
@@ -63,7 +63,7 @@ const Home = () => {
                         <hr />
                         <div className="about__textContainer">
                             <h2>Interface & Design</h2>
-                            <p>Briefing, wireframe, UX, UI and branding.</p>
+                            <p>Briefing, Wireframe, UX/UI.</p>
                         </div>
                     </div>
                     <div className="about__cardTools">
@@ -72,18 +72,8 @@ const Home = () => {
                         </div>
                         <hr />
                         <div className="about__textContainer">
-                            <h2>html & css</h2>
-                            <p>Responsive websites with fast loading.</p>
-                        </div>
-                    </div>
-                    <div className="about__cardTools">
-                        <div className="about__iconContainer">
-                            <img src={iconTools3} alt="" />
-                        </div>
-                        <hr />
-                        <div className="about__textContainer">
-                            <h2>Node.js</h2>
-                            <p>Build your system with node.js.</p>
+                            <h2>HTML & CSS</h2>
+                            <p>Sites responsivos com carregamento rápido.</p>
                         </div>
                     </div>
                     <div className="about__cardTools">
@@ -92,8 +82,18 @@ const Home = () => {
                         </div>
                         <hr />
                         <div className="about__textContainer">
-                            <h2>React.js</h2>
-                            <p>Create your e-commerce or blog with React.js.</p>
+                            <h2>React.JS</h2>
+                            <p>Crie seu e-commerce ou blog com React.JS.</p>
+                        </div>
+                    </div>
+                    <div className="about__cardTools">
+                        <div className="about__iconContainer">
+                            <img src={iconTools3} alt="" />
+                        </div>
+                        <hr />
+                        <div className="about__textContainer">
+                            <h2>Node.JS</h2>
+                            <p>Construa seu sistema com Node.JS.</p>
                         </div>
                     </div>
                 </article>
@@ -102,15 +102,13 @@ const Home = () => {
                         <hr />
                         <div className="about__experienceList">
                             <ul>
-                                <li><b>I've had experiences with</b></li>
-                                <li>Firebase Database</li>
-                                <li>MySQL Database</li>
-                                <li>GIT, GitHub, Bitbucket</li>
-                                <li>Coding PHP</li>
-                                <li>Figma, Adobe XD, Sketch</li>
-                                <li>CSS Preprocessors</li>
-                                <li>Digital Marketing</li>
-                                <li>Coding Python (Django)</li>
+                                <li><b>Eu tive contato com</b></li>
+                                <li>Java</li>
+                                <li>Maven</li>
+                                <li>SpringBoot</li>
+                                <li>C++, Arduino(C++)</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe Photoshop</li>
                             </ul>
                         </div>
                     </div>
@@ -118,15 +116,13 @@ const Home = () => {
                         <hr />
                         <div className="about__experienceList">
                             <ul>
-                                <li><b>I have years of experience with</b></li>
-                                <li>Coding HTML5</li>
-                                <li>Coding CSS3</li>
-                                <li>Coding WordPress</li>
-                                <li>Coding JavaScript</li>
-                                <li>Using Elementor</li>
-                                <li>Using Adobe Package</li>
-                                <li>Creating Brand and Logo</li>
-                                <li>Creating User Interface</li>
+                                <li><b>Tenho anos de experiência com</b></li>
+                                <li>HTML5, CSS3, SASS</li>
+                                <li>JavaScript, TypeScript</li>
+                                <li>React.js</li>
+                                <li>Bootstrap</li>
+                                <li>GIT, GitHub</li>
+                                <li>Figma</li>
                             </ul>
                         </div>
                     </div>
@@ -134,41 +130,41 @@ const Home = () => {
                         <hr />
                         <div className="about__experienceList">
                             <ul>
-                                <li><b>I work and study about</b></li>
-                                <li>Coding React.js</li>
-                                <li>Coding CSS3</li>
-                                <li>Coding JavaScript</li>
-                                <li>Coding TypeScript</li>
-                                <li>Studying Node.js basics</li>
-                                <li>Studying API RESTful</li>
-                                <li>Studying User Experience</li>
+                                <li><b>Eu trabalho e estudo</b></li>
+                                <li>HTML5, CSS3, SASS</li>
+                                <li>JavaScript, TypeScript</li>
+                                <li>React.js</li>
+                                <li>React Native</li>
+                                <li>Node.JS, Nest.JS, Express.JS</li>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
                             </ul>
                         </div>
                     </div>
                 </article>
-                <footer id='Contact' className='contact'>
-                    <div className="contact__title">
-                        <h1>Contato</h1>
-                    </div>
-                    <div className="contact__icons">
-                        <a href="https://www.figma.com/@GabrielFragaDEV" target='_blank'>
-                            <img src={figmaIcon} alt="Figma Icone" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/gabriel-fraga-1a8099109/" target='_blank'>
-                            <img src={linkedinIcon} alt="Linkedin Icone" />
-                        </a>
-                        <a href="mailto:gabrielfraga2308@gmail.com" target='_blank'>
-                            <img src={gmailIcon} alt="Gmail Icone" />
-                        </a>
-                        <a href="https://github.com/FragaGabriel23/" target='_blank'>
-                            <img src={githubIcon} alt="Github Icone" />
-                        </a>
-                        <a href="https://dribbble.com/FragaGabriel23" target='_blank'>
-                            <img src={dribbbleIcon} alt="dribbble Icone" />
-                        </a>
-                    </div>
-                </footer>
             </section>
+            <footer id='Contact' className='contact'>
+                <div className="contact__title">
+                    <h1>Contato</h1>
+                </div>
+                <div className="contact__icons">
+                    <a href="https://www.figma.com/@GabrielFragaDEV" target='_blank'>
+                        <img src={figmaIcon} alt="Figma Icone" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriel-fraga-dev/" target='_blank'>
+                        <img src={linkedinIcon} alt="Linkedin Icone" />
+                    </a>
+                    <a href="mailto:gabrielfraga2308@gmail.com" target='_blank'>
+                        <img src={gmailIcon} alt="Gmail Icone" />
+                    </a>
+                    <a href="https://github.com/FragaGabriel23/" target='_blank'>
+                        <img src={githubIcon} alt="Github Icone" />
+                    </a>
+                    <a href="https://dribbble.com/FragaGabriel23" target='_blank'>
+                        <img src={dribbbleIcon} alt="dribbble Icone" />
+                    </a>
+                </div>
+            </footer>
         </>
     )
 }

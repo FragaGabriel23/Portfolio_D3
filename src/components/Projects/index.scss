@@ -1,10 +1,16 @@
 @use '../../sass/variables' as *;
+@use '../../sass/mediaQueries' as *;
 
 .cardProject {
     display: flex;
     column-gap: 2vw;
     height: 30vh;
 
+    @include respond-to-small {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 15vh;
+    }
 
     &__left {
         background-color: $cardBackground;
@@ -12,11 +18,21 @@
         padding: 5vh 2vw;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        @include respond-to-small {
+            padding: 0 3vw;
+        }
     }
 
     img {
         width: 15vw;
         height: auto;
+
+        @include respond-to-small {
+            width: auto;
+            height: 10vh;
+        }
     }
 
     &__tags {
@@ -26,6 +42,10 @@
         position: absolute;
         bottom: 1vh;
         right: 0.5vw;
+
+        @include respond-to-small {
+            bottom: 0.4vh;
+        }
     }
 
     &__tags p {
@@ -34,25 +54,62 @@
         border-radius: 1vw;
         box-shadow: 0.3vh 0.5vh 1vh -0.7vh rgba(0, 0, 0, 0.219);
 
-        font-size: 0.65vw;
+        font-size: 0.7rem;
         font-weight: 800;
+
+        @include respond-to-small {
+            font-size: 0.3rem;
+        }
+        @include respond-to-medium {
+            font-size: 0.45rem;
+        }
+        @include respond-to-large {
+            font-size: 0.5rem;
+        }
+
     }
 
     &__right {
         width: 20vw;
         padding: 1vh 0;
 
-        h2 {
-            font-size: 1.5vw;
-            font-weight: 800;
-            margin-bottom: 1vh;
+        @include respond-to-small {
+            width: auto;
         }
 
-        p {
-            font-size: 0.9vw;
-            font-weight: 300;
-            color: #808080;
+    }
+
+    &__right h2 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-bottom: 1vh;
+
+        @include respond-to-small {
+            font-size: 1.1rem;
         }
+
+        @include respond-to-medium {
+            font-size: 1rem;
+        }
+    }
+
+    &__right p {
+        font-size: 0.95rem;
+        font-weight: 300;
+        color: #808080;
+
+        @include respond-to-small {
+            font-size: 0.35rem;
+        }
+
+        @include respond-to-medium {
+            font-size: 0.48rem;
+        }
+
+        @include respond-to-large {
+            font-size: 0.7rem;
+        }
+
     }
 
 }
