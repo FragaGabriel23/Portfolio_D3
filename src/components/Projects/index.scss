@@ -33,6 +33,11 @@
             width: auto;
             height: 10vh;
         }
+
+        @include respond-to-medium {
+            width: 20vw;
+        }
+
     }
 
     &__tags {

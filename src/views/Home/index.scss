@@ -159,9 +159,9 @@
     &__presentation p {
         margin: 3vh 0 3vh 0;
 
-        line-height: 2rem;
+        line-height: 1.7rem;
         text-align: left;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 300;
     }
 
@@ -228,29 +228,33 @@
     }
 
     &__iconContainer {
-        padding: 0 1vw;
+        padding: 0 0.5vw 0 1vw;
 
     }
 
     &__iconContainer img {
         width: 2vw;
+
+        @include respond-to-small {
+            width: 4vw;
+        }
     }
 
     &__textContainer {
-        padding: 0 0 0 1vw;
+        padding: 0 0 0 0.5vw;
 
     }
 
     &__textContainer h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 800;
 
         @include respond-to-small {
-            font-size: 0.5rem;
+            font-size: 0.6rem;
         }
 
         @include respond-to-medium {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
 
         @include respond-to-large {
@@ -259,11 +263,11 @@
     }
 
     &__textContainer p {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
         font-weight: 300;
 
         @include respond-to-small {
-            font-size: 0.3rem;
+            font-size: 0.4rem;
         }
 
         @include respond-to-medium {
@@ -354,8 +358,13 @@
     &__icons img {
         width: 2.5vw;
         height: 2.5vw;
-
+        
         transition: ease-in-out 300ms;
+
+        @include respond-to-small {
+            width: 3vh;
+            height: 3vh;
+        }
     }
 
     &__icons img:hover {
