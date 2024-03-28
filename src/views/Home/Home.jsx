@@ -5,7 +5,7 @@ import { iconTools1, iconTools2, iconTools3, iconTools4 } from '../../assets/Ico
 import { gmailIcon, githubIcon, figmaIcon, dribbbleIcon, linkedinIcon } from '../../assets/Icons/Contact';
 
 
-const Home = () => {
+const Home = ({Projects}) => {
     return (
         <>
             <header id='Home' className='header'>
@@ -30,10 +30,7 @@ const Home = () => {
                     <hr />
                 </div>
                 <div className="projects__container">
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    {Projects.map((project, i) => (<ProjectCard Project={project} key={i}/>))}
                 </div>
             </section>
             <section id='About' className='about'>
@@ -42,7 +39,7 @@ const Home = () => {
                     <hr />
                 </div>
                 <article className="about__presentation">
-                    <img src={Foto} alt="Foto" />
+                    <img alt="Foto" />
                     <aside>
                         <h1>Gabriel Fraga</h1>
                         <p>
