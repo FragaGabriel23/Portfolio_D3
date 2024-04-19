@@ -114,11 +114,11 @@
         color: #808080;
 
         @include respond-to-small {
-            font-size: 0.35rem;
+            font-size: 0.5rem;
         }
 
         @include respond-to-medium {
-            font-size: 0.48rem;
+            font-size: 0.6rem;
         }
 
         @include respond-to-large {
