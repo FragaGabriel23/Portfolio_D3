@@ -1,11 +1,11 @@
-import ProjectCard from '../../components/Projects/ProjectCard'
-import Foto from '/foto.jpeg'
 import './index.scss'
+import ProjectCard from '../../components/Projects/ProjectCard'
+import { Projects } from '../../mocks/projects.mock'
 import { iconTools1, iconTools2, iconTools3, iconTools4 } from '../../assets/Icons/Tools';
 import { gmailIcon, githubIcon, figmaIcon, dribbbleIcon, linkedinIcon } from '../../assets/Icons/Contact';
 
 
-const Home = ({Projects}) => {
+const Home = () => {
     return (
         <>
             <header id='Home' className='header'>
@@ -30,7 +30,7 @@ const Home = ({Projects}) => {
                     <hr />
                 </div>
                 <div className="projects__container">
-                    {Projects.map((project, i) => (<ProjectCard Project={project} key={i}/>))}
+                    {Projects.map((project, i) => (<ProjectCard Project={project} key={i} />))}
                 </div>
             </section>
             <section id='About' className='about'>

@@ -1,4 +1,12 @@
-export const projects = [
+interface Project {
+    tools: string[];
+    title: string;
+    description: string;
+    img: string;
+    link: string;
+}
+
+export const Projects: Project[] = [
     {
         tools: ["React.JS", "SASS"],
         title: "e-Commerce DNC",

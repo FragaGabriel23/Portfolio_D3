@@ -1,6 +1,16 @@
 import './index.scss'
 
-const ProjectCard = ({ Project }) => {
+interface ProjectCardProps {
+    Project: {
+        tools: string[];
+        title: string;
+        description: string;
+        img: string;
+        link: string;
+    };
+}
+
+const ProjectCard = ({ Project }: ProjectCardProps) => {
     return (
         < article className='cardProject' >
             <div className='cardProject__left'>
@@ -8,7 +18,7 @@ const ProjectCard = ({ Project }) => {
                     <img src={Project.img} alt="Print do Projeto" />
                 </a>
                 <div className='cardProject__tags'>
-                    {Project.tools.map((tool, i) => (<p key={i}>{tool}</p>))}
+                    {Project.tools.map((tool, i: number) => (<p key={i}>{tool}</p>))}
                 </div>
             </div>
             <div className='cardProject__right'>
