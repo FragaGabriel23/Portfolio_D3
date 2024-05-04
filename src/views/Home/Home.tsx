@@ -3,6 +3,7 @@ import ProjectCard from '../../components/Projects/ProjectCard'
 import { Projects } from '../../mocks/projects.mock'
 import { iconTools1, iconTools2, iconTools3, iconTools4 } from '../../assets/Icons/Tools';
 import { gmailIcon, githubIcon, figmaIcon, dribbbleIcon, linkedinIcon } from '../../assets/Icons/Contact';
+import TextTyping from '../../components/TextTyping/TextTyping';
 
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
         <>
             <header id='Home' className='header'>
                 <div className="header__logo">
-                    <p>DNC</p>
+                    <p>Fraga</p>
                 </div>
                 <main className='header__main'>
                     <ul className='header__navBar'>
@@ -20,7 +21,7 @@ const Home = () => {
                         <li><a href="#Contact">contato</a></li>
                     </ul>
                     <div className='header__text'>
-                        <h1> front-end.web(developer) </h1>
+                        <h1> <TextTyping Text={["Olá", "Eu sou Gabriel Fraga", "Desenvolvedor Front-end"]}/> </h1>
                     </div>
                 </main>
             </header>
